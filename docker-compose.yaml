@@ -1,15 +1,6 @@
 version: '3'
 services:
   azure-vote-back:
-    image: redis
-    container_name: azure-vote-back
-    ports:
-        - "6379:6379"
-
-  azure-vote-front:
-    image: acrlsn11.azurecr.io/aci-helloworld:v1
-    container_name: azure-vote-front
-    environment:
-      REDIS: azure-vote-back
+    image: microsoft/aci-helloworld
     ports:
         - "80:80"
