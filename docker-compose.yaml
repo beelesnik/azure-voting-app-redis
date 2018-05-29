@@ -3,6 +3,6 @@ services:
   helloworld:
     image: acrlsn01.azurecr.io/aci-helloworld:v1
     deploy:
-      replicas: 3
+      replicas: 2
     ports:
         - "80:80"
